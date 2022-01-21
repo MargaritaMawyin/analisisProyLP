@@ -19,7 +19,7 @@ def plataformas():
     #print(unique_list)
     names = ['PC', 'NintendoSwitch', 'PS5', 'PS4', 'Multi', 'XboxOne', 'XOne', 'Xbox360',
              'PlayStation3', 'GameCube',
-             'Dreamcast', 'Nintendo64', 'SNES', 'PlayStation1', 'XboxSeries', 'Android', 'iiU',
+             'Dreamcast', 'Nintendo64', 'SNES', 'PlayStation1', 'XboxSeries', 'Android', 'WiiU',
              'NES', '3DS', 'Arcade','GameBoyAdvance', 'Nintendo DS','Xbox']
     count=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     for p in plataformas:
