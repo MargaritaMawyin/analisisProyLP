@@ -7,5 +7,6 @@ def main():
 
 
 plataformasGrafico.plataformas()
+plataformasGrafico.clasificacion()
 plataformasGrafico.grafico()
 plt.show()
