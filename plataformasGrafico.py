@@ -2,6 +2,7 @@ import os
 import pathlib
 from builtins import print
 
+import matplotlib.pyplot
 import pandas as pd
 from matplotlib.pyplot import barh, show
 import matplotlib.pyplot as plt
@@ -22,7 +23,7 @@ def plataformas():
 def clasificacion():
     names = ['PC', 'NintendoSwitch', 'PS5', 'PS4', 'Multi', 'XboxOne', 'XOne', 'Xbox360',
              'PlayStation3', 'GameCube',
-             'Dreamcast', 'Nintendo64', 'SNES', 'PlayStation1', 'XboxSeries', 'Android', 'iiU',
+             'Dreamcast', 'Nintendo64', 'SNES', 'PlayStation1', 'XboxSeries', 'Android', 'WiiU',
              'NES', '3DS', 'Arcade','GameBoyAdvance', 'Nintendo DS','Xbox']
     numeroDePlataformas=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     for p in plataformas():
@@ -80,6 +81,8 @@ def clasificacion():
 def grafico():
     plt.barh(clasificacion()[0], clasificacion()[1])
     plt.show
+    plt.ylabel("Plataformas")
+    plt.xlabel("Frecuencia")
     return
 
 
