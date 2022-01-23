@@ -11,9 +11,9 @@ def plataformas():
     dir = 'archivos/juegos_general.csv'
     plataformasLista=[]
     with open(dir, "r") as archivo:
-       for linea in archivo:
-          #print(linea)
-          plataformasLista.append(linea.split(",")[3])
+        for linea in archivo:
+            #print(linea)
+            plataformasLista.append(linea.split(",")[3])
     #print (plataformasLista)
     #unique_list = list(dict.fromkeys(plataformas))
     #print(unique_list)
