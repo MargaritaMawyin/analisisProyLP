@@ -6,8 +6,8 @@ def genero():
     df['numero_juegos'] = 1
 
     df = df.groupby(['genero']).count().numero_juegos
-    df = df.sort_values(ascending= False)
-    df.plot(kind="bar",figsize=(10, 7))
+    df = df.sort_values(ascending= True)
+    df.plot(kind="barh",figsize=(10, 7))
     print(df)
 
     plt.show()
